@@ -31,7 +31,7 @@ The solution isn't as easy this time.
 
 ## Usage
 
-`main.py` contains the algorithm. Just fire it up with `utils.py` in the same directory and you'll have to input the number of pieces (`n`)on the board.
+`main.py` contains the algorithm. Just fire it up with `utils.py` in the same directory and you'll have to input the number of pieces (`n`) on the board.
 
 Then, for the next `n` lines, you will have to input the pieces in this format.
 
