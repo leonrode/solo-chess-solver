@@ -7,13 +7,13 @@ Solve chess.com's [Solo-Chess puzzles](https://www.chess.com/solo-chess) using a
 This script uses basic backtracking to test combinations of moves that reach a specific goal.
 
 ### Solo-Chess
-Solo-Chess is a type of chess puzzle with simple rules.
+Solo-Chess is a type of chess puzzle with simple rules. The end goal is a position with only one piece left, achieved through these rules.
 
 * Each move made must be a capture
 * No piece can capture more than two pieces
-* If there is a king on the board, it must be the  final piece
+* If there is a king on the board, it must be the final piece
 
-The puzzles can become extremely  complex extremely quickly, hence the inspiration of the program.
+The puzzles can become extremely complex extremely quickly, hence the inspiration of the program.
 
 ### Basic Example
 
