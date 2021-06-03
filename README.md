@@ -81,7 +81,7 @@ Q d4 f4
 
 ## Contact
 
-For questions or suggestions, contact me [here](mailto:leon.rode13@gmail.com).
+For questions or suggestions, contact me [here](mailto:leon.rode13@gmail.com) or on Discord at <strong>lionrocker#3960</strong>.
 
 ## License
 
