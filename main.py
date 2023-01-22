@@ -9,7 +9,7 @@ pieces = []
 kingIsPresent = False
 moves = []
 
-# input pieces 
+# input pieces
 for _ in range(numberOfPieces):
   pieceStr, squareStr = input().split(" ")
 
@@ -36,7 +36,7 @@ def solve(remainingPieces, moves):
   if utils.isFinished(remainingPieces, kingIsPresent):
     print("--")
     for move in moves:
-      
+
       print(move["piece"]["piece"].symbol(), chess.square_name(move["from"]), chess.square_name(move["to"]))
     print("--")
     # stop finding other solutions and exit
@@ -48,21 +48,21 @@ def solve(remainingPieces, moves):
   board.turn = False
   generatedAttacks = utils.findAttacks(remainingPieces, board)
 
-  print(list(generatedAttacks))
+  #print(list(generatedAttacks))
   for attack in generatedAttacks:
     # we never will want to attack a king
     if attack["attackedPiece"]["piece"].piece_type != chess.KING:
 
       # if the piece can actually move, then continue the attack
       if attack["piece"]["moveCount"] < 2:
-        
+
         # setting up for backtracking
         oldRemainingPieces = remainingPieces.copy()
         oldMoves = moves.copy()
 
         attackingPiece = attack["piece"]
         attackedPiece = attack["attackedPiece"]
-      
+
         # removing the attacked piece because it is taken
         remainingPieces.remove(attackedPiece)
 
@@ -82,7 +82,7 @@ def solve(remainingPieces, moves):
 
         # increase the move count of the attacking piece
         updatedPiece["moveCount"] += 1
-        
+
         # the old piece index is the index of the attacking piece as it is guaranteed to be in the list
         oldPieceIndex = remainingPieces.index(attackingPiece)
 
