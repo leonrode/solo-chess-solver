@@ -9,6 +9,9 @@ pieces = []
 kingIsPresent = False
 moves = []
 
+print(f"Input the {numberOfPieces} pieces on the following lines using this format: [Piece Letter] [Square]")
+print("Example: K g2")
+
 # input pieces
 for _ in range(numberOfPieces):
   pieceStr, squareStr = input().split(" ")
@@ -32,6 +35,7 @@ for _ in range(numberOfPieces):
 
 def solve(remainingPieces, moves):
 
+
   # goal case, print the moves they have
   if utils.isFinished(remainingPieces, kingIsPresent):
     print("--")
@@ -48,7 +52,10 @@ def solve(remainingPieces, moves):
   board.turn = False
   generatedAttacks = utils.findAttacks(remainingPieces, board)
 
-  #print(list(generatedAttacks))
+  if len(generatedAttacks) == 0:
+    print("No solution found for this puzzle. Check your input to make sure the pieces are in the right squares.")
+    return
+
   for attack in generatedAttacks:
     # we never will want to attack a king
     if attack["attackedPiece"]["piece"].piece_type != chess.KING:

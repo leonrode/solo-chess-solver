@@ -1,5 +1,5 @@
-
 # solo-chess-solver
+
 Solve chess.com's [Solo-Chess puzzles](https://www.chess.com/solo-chess) using a new recursive-backtracking algorithm.
 
 ## Introduction
@@ -7,11 +7,12 @@ Solve chess.com's [Solo-Chess puzzles](https://www.chess.com/solo-chess) using a
 This script uses basic backtracking to test combinations of moves that reach a specific goal.
 
 ### Solo-Chess
+
 Solo-Chess is a type of chess puzzle with simple rules. The end goal is a position with only one piece left, achieved through these rules.
 
-* Each move made must be a capture
-* No piece can capture more than two pieces
-* If there is a king on the board, it must be the final piece
+- Each move made must be a capture
+- No piece can capture more than two pieces
+- If there is a king on the board, it must be the final piece
 
 The puzzles can become extremely complex extremely quickly, hence the inspiration of the program.
 
@@ -21,10 +22,11 @@ The puzzles can become extremely complex extremely quickly, hence the inspiratio
 
 Here, the solution is
 
-* Kxf2
-* Kxe2
+- Kxf2
+- Kxe2
 
 ### Complex Example
+
 <img src="https://imgur.com/w7c7h1S.png" width=500></src>
 
 The solution isn't as easy this time.
@@ -38,6 +40,7 @@ Then, for the next `n` lines, you will have to input the pieces in this format.
 `[Piece] [Square]`
 
 where piece is the symbol for the piece:
+
 ```
 K => king
 Q => queen
@@ -45,18 +48,23 @@ R => rook
 B => bishop
 N => knight
 P => pawn
-````
+```
 
 Example:
+
 ```
-P c3
-K g2
-Q c1
+Enter number of pieces: 3
+Input the 3 pieces on the following lines using this format: [Piece] [Square]
+Example: K g2
+K g1
+R f2
+B e2
 ```
 
 Hit `Enter` after the last piece and wait for the sequence of moves to be outputted.
 
 The output is in the format
+
 ```
 [Piece] [FromSquare] [ToSquare]
 ```
@@ -64,6 +72,7 @@ The output is in the format
 For example, a King move from g3 to g4 would be indicated by `K g3 g4`
 
 Longer example:
+
 ```
 ---
 R b8 b3
