@@ -52,10 +52,6 @@ def solve(remainingPieces, moves):
   board.turn = False
   generatedAttacks = utils.findAttacks(remainingPieces, board)
 
-  if len(generatedAttacks) == 0:
-    print("No solution found for this puzzle. Check your input to make sure the pieces are in the right squares.")
-    return
-
   for attack in generatedAttacks:
     # we never will want to attack a king
     if attack["attackedPiece"]["piece"].piece_type != chess.KING:

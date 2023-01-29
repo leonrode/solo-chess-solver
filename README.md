@@ -97,7 +97,7 @@ For questions or suggestions, contact me [here](mailto:leon.rode13@gmail.com) or
 
 ## Contributions
 
-1. @RyanDefender - Clearer prompts and error in README exmaple.
+1. @RyanDefender - Clearer prompts and error in README example.
 
 ## License
 
