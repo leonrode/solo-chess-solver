@@ -33,9 +33,19 @@ The solution isn't as easy this time.
 
 ## Usage
 
-`main.py` contains the algorithm. Just fire it up with `utils.py` in the same directory and you'll have to input the number of pieces (`n`) on the board.
+1. (Windows) Run the following in cmd 
+```
+python -m pip install chess
+```
+1. (Unix/Mac) Run the following in Terminal
+```
+python3 -m pip install chess
+```
+2. Ensure `main.py` and `utils.py` are within the same directory. Then run `python main.py` on Windows, and `python3 main.py` on Unix/Mac systems.
 
-Then, for the next `n` lines, you will have to input the pieces in this format.
+Then, input the number of pieces (`n`) on the board.
+
+For the next `n` lines, you will have to input the pieces in this format.
 
 `[Piece] [Square]`
 
