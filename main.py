@@ -14,11 +14,12 @@ print("Example: K g2")
 
 # input pieces
 for _ in range(numberOfPieces):
-  pieceStr, squareStr = input().split(" ")
+  pieceStr, squareStr = input("-> ").split(" ")
 
   # assign the chess.SQUARE type
-  square = chess.parse_square(squareStr)
 
+  square = chess.parse_square(squareStr)
+  
   # create a piece with the piece type mapped from the letter (ex. B -> bishop, N -> knight)
   piece = chess.Piece(utils.pieceStringToPieceType(pieceStr), chess.WHITE)
 
