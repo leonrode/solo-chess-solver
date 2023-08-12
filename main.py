@@ -14,7 +14,7 @@ print("Example: K g2")
 
 # input pieces
 for _ in range(numberOfPieces):
-  pieceStr, squareStr = input("-> ").split(" ")
+  pieceStr, squareStr = input("-> ").strip().split(" ")
 
   # assign the chess.SQUARE type
 
